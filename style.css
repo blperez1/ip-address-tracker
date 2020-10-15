@@ -41,7 +41,10 @@ body{
     z-index: 1;
 }
 
-
+#ipAddressInput {
+    padding: 1em;
+    border-radius: 1em;
+}
 
 .infoContainer {
     grid-column: 1 / 2;
@@ -51,6 +54,7 @@ body{
 }
 
 .infoBox {
+    background: white;
     border: 1px solid black;
     border-radius: 1em;
 }
