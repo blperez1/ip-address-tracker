@@ -84,10 +84,12 @@ const setLngLat = (lngLat) => {
         .addTo(map);
 } 
 
-const ipAddress = document.querySelector("#ipAddressInput").value;
 const btn = document.querySelector("#submitBtn");
 btn.addEventListener('click', () => {
-    fetch(`https://geo.ipify.org/api/v1?apiKey=${ipToken}&ipAddress=${ipAddress}`)
+    const ipAddress = document.querySelector("#ipAddressInput");
+    renderMap(ipAddress.value);
+    ipAddress.value = "";
+})
     .then(data => data.json())
     .then(data => {
         const lngLat = [data.location.lng, data.location.lat];
