@@ -90,11 +90,19 @@ btn.addEventListener('click', () => {
     renderMap(ipAddress.value);
     ipAddress.value = "";
 })
+
+const renderMap = (_ipAddress) => { 
+    let apiEndPoint = (_ipAddress)?
+    `https://geo.ipify.org/api/v1?apiKey=${ipToken}&ipAddress=${_ipAddress}`:
+    `https://geo.ipify.org/api/v1?apiKey=${ipToken}`;
+
+   
+    fetch(apiEndPoint)
     .then(data => data.json())
     .then(data => {
         const lngLat = [data.location.lng, data.location.lat];
         renderLocationInfo(data);
         setLngLat(lngLat);
     })
-})
-
+    .catch(console.error)
+}
