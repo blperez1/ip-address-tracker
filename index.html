@@ -6,9 +6,8 @@
 
   <title>Frontend Mentor | IP Address Tracker</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-  crossorigin=""/>
+  
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,18 +18,19 @@
     <div class="infoContainer">
         <h3 class="siteTitle">IP Address Tracker</h3>
         <input type="text" name="ipAddressInput" id="ipAddressInput" placeholder="Search for any IP address or domain">
+        <button id="submitBtn">></button>
         <div class="infoBox">
             <p class="label">IP Address</p>
-            <p id="ipAddrText" class="infoText">192.212.174.101</p>
+            <p id="ipAddrText" class="infoText"></p>
 
             <p class="label">Location</p>
-            <p id="locationText" class="infoText">Brooklyn, NY 10001</p>
+            <p id="locationText" class="infoText"></p>
 
             <p class="label">Timezone</p>
-            <p id="timezoneText" class="infoText">UTC</p>
+            <p id="timezoneText" class="infoText"></p>
 
             <p class="label">ISP</p>
-            <p id="ispText" class="infoText">SpaceX Starlink</p>
+            <p id="ispText" class="infoText"></p>
             
         </div>
     </div>
@@ -42,10 +42,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-  crossorigin=""></script>
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+<script src="key.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
