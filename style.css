@@ -41,8 +41,6 @@ body{
     z-index: 1;
 }
 
-
-
 .infoContainer {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -55,9 +53,12 @@ body{
     border-radius: 1em;
 }
 
-
-@media screen and (min-width: 375px) {
-    .infoBox {
-        text-align: center;
-    }
+.btn {
+    border-radius: .5em .5em;
 }
+
+input {
+    border-radius: .5em .5em;
+}
+
+
