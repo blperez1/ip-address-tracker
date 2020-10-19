@@ -17,8 +17,14 @@
     <div id="map" class="mapContainer"></div>
     <div class="infoContainer">
         <h3 class="siteTitle">IP Address Tracker</h3>
-        <input type="text" name="ipAddressInput" id="ipAddressInput" placeholder="Search for any IP address or domain">
-        <button id="submitBtn">></button>
+        <!-- <input type="text" name="ipAddressInput" id="ipAddressInput" placeholder="Search for any IP address or domain">
+        <button id="submitBtn" class="button">></button> -->
+        <div class="input-group mb-3">
+          <input type="text" d="ipAddressInput" class="form-control" placeholder="Search for any IP address or domain" aria-label="Search Ip address or domain" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button id="submitBtn" class="btn btn-outline-secondary" type="button">></button>
+          </div>
+        </div>
         <div class="infoBox">
             <p class="label">IP Address</p>
             <p id="ipAddrText" class="infoText"></p>
